@@ -1,0 +1,17 @@
+title: "White Ravens Blog"
+description: "Engineering & community blog for the White Ravens open-source collective."
+url: "https://blog.wrservices.link"
+baseurl: ""
+author:
+  name: "White Ravens"
+  email: "kontakt@whiteravens.net"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - CONTRIBUTING.md
+  - CODE_OF_CONDUCT.md
+  - SECURITY.md
+  - vendor
+  - .github
