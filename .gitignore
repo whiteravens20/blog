@@ -6,5 +6,6 @@ _site
 vendor
 # Ruby
 .bundle
+Gemfile.lock
 # OS
 .DS_Store
