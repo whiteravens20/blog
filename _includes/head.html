@@ -1,6 +1,20 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{% if page.title %}{{ page.title | escape }} — {% endif %}{{ site.title | escape }}</title>
-<meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-<link rel="icon" type="image/svg+xml" href="{{ "/assets/images/favicon.svg" | relative_url }}">
+<meta name="view-transition" content="same-origin">
+<script>
+  (function () {
+    try {
+      var stored = localStorage.getItem('theme');
+      var theme = (stored === 'light' || stored === 'dark') ? stored : 'dark';
+      document.documentElement.setAttribute('data-theme', theme);
+    } catch (e) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  })();
+</script>
+<link rel="icon" type="image/png" sizes="128x128" href="{{ "/assets/images/favicon-128.png" | relative_url }}">
+<link rel="apple-touch-icon" href="{{ "/assets/images/favicon-128.png" | relative_url }}">
 <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+{% seo %}
+{% feed_meta %}
+<script defer src="{{ "/assets/js/main.js" | relative_url }}"></script>

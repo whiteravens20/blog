@@ -6,7 +6,10 @@ layout: default
     <h1>{{ page.title | escape }}</h1>
     <p class="post-meta">
       <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d" }}</time>
-      {% if page.author %} • {{ page.author }}{% endif %}
+      {% if page.author %} &middot; {{ page.author }}{% endif %}
+      {% assign words = content | number_of_words %}
+      {% assign minutes = words | divided_by: 200 | plus: 1 %}
+      &middot; {{ minutes }} min read
     </p>
   </header>
   <div class="post-content">
@@ -14,7 +17,23 @@ layout: default
   </div>
   {% if page.tags %}
   <div class="post-tags">
-    Tags: {% for tag in page.tags %}<span>{{ tag }}</span>{% unless forloop.last %}, {% endunless %}{% endfor %}
+    Tags: {% for tag in page.tags %}<a href="{{ '/tags/' | relative_url }}#{{ tag | slugify }}">{{ tag }}</a>{% unless forloop.last %} {% endunless %}{% endfor %}
   </div>
+  {% endif %}
+  {% if page.previous or page.next %}
+  <nav class="post-nav" aria-label="Post navigation">
+    {% if page.previous %}
+    <a class="post-nav-link prev" href="{{ page.previous.url | relative_url }}" rel="prev">
+      <span class="post-nav-label">&larr; Previous</span>
+      <span class="post-nav-title">{{ page.previous.title }}</span>
+    </a>
+    {% else %}<span></span>{% endif %}
+    {% if page.next %}
+    <a class="post-nav-link next" href="{{ page.next.url | relative_url }}" rel="next">
+      <span class="post-nav-label">Next &rarr;</span>
+      <span class="post-nav-title">{{ page.next.title }}</span>
+    </a>
+    {% else %}<span></span>{% endif %}
+  </nav>
   {% endif %}
 </article>
