@@ -422,13 +422,6 @@ h1, h2, h3, h4 { line-height: 1.25; }
   font-size: 0.75rem;
   font-variant-numeric: tabular-nums;
 }
-.tag-section { margin-bottom: 3rem; scroll-margin-top: 5rem; }
-.tag-section .section-heading {
-  font-size: 1.4rem;
-  margin-bottom: 1.25rem;
-  font-family: 'JetBrains Mono', ui-monospace, monospace;
-  font-weight: 500;
-}
 
 .post-nav {
   display: grid;
