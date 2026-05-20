@@ -4,6 +4,10 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  schedule:
+    # Rebuild daily at 00:00 UTC so future-dated Jekyll posts are
+    # published automatically on their calendar date.
+    - cron: '0 0 * * *'
 
 permissions:
   contents: read
