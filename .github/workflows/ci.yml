@@ -15,5 +15,7 @@ jobs:
           bundler-cache: true
       - name: Build site
         run: bundle exec jekyll build
+        env:
+          JEKYLL_ENV: production
       - name: Check CNAME
         run: test -f CNAME && grep -q 'blog.wrservices.link' CNAME
