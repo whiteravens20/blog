@@ -2,7 +2,7 @@
 
 Engineering & community blog for the White Ravens open-source collective.
 
-- **URL:** https://blog.wrservices.link
+- **URL:** https://blog.whiteravens.net
 - **Stack:** Jekyll + GitHub Pages
 - **License:** MIT
 

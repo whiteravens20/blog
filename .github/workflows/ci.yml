@@ -18,4 +18,4 @@ jobs:
         env:
           JEKYLL_ENV: production
       - name: Check CNAME
-        run: test -f CNAME && grep -q 'blog.wrservices.link' CNAME
+        run: test -f CNAME && grep -q 'blog.whiteravens.net' CNAME

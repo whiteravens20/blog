@@ -6,7 +6,7 @@
 2. **Open a PR** from a feature branch.
 3. **CI runs** `jekyll build` to catch broken Liquid or front-matter errors.
 4. **Reviewer (Casey)** merges the PR.
-5. **Pages workflow** auto-deploys the site to `blog.wrservices.link`.
+5. **Pages workflow** auto-deploys the site to `blog.whiteravens.net`.
 
 ## Post format
 
