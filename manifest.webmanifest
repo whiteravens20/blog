@@ -1,0 +1,25 @@
+---
+permalink: /manifest.webmanifest
+---
+{
+  "name": {{ site.title | jsonify }},
+  "short_name": "WR Blog",
+  "description": {{ site.description | jsonify }},
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#0b0c10",
+  "background_color": "#0b0c10",
+  "icons": [
+    {
+      "src": "/assets/images/favicon-128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/favicon.png",
+      "sizes": "844x844",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
