@@ -1,0 +1,46 @@
+title: "White Ravens Blog"
+description: "Engineering & community blog for the White Ravens open-source collective."
+url: "https://blog.whiteravens.net"
+baseurl: ""
+author:
+  name: "White Ravens"
+  email: "kontakt@whiteravens.net"
+
+image: /assets/images/og-default.png
+twitter:
+  card: summary_large_image
+social:
+  name: "White Ravens"
+  links:
+    - https://github.com/whiteravens20
+    - https://whiteravens.net
+    - https://wrservices.link
+
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/og-default.png
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - CONTRIBUTING.md
+  - CODE_OF_CONDUCT.md
+  - SECURITY.md
+  - vendor
+  - .github

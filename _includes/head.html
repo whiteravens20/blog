@@ -1,0 +1,22 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="view-transition" content="same-origin">
+<script>
+  (function () {
+    try {
+      var stored = localStorage.getItem('theme');
+      var theme = (stored === 'light' || stored === 'dark') ? stored : 'dark';
+      document.documentElement.setAttribute('data-theme', theme);
+    } catch (e) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  })();
+</script>
+<meta name="theme-color" content="#0b0c10">
+<link rel="icon" type="image/png" sizes="128x128" href="{{ "/assets/images/favicon-128.png" | relative_url }}">
+<link rel="apple-touch-icon" href="{{ "/assets/images/favicon-128.png" | relative_url }}">
+<link rel="manifest" href="{{ "/manifest.webmanifest" | relative_url }}">
+<link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+{% seo %}
+{% feed_meta %}
+<script defer src="{{ "/assets/js/main.js" | relative_url }}"></script>

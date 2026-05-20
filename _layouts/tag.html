@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<section class="intro">
+  <p class="intro-eyebrow">Tag</p>
+  <h1>#{{ page.tag }}</h1>
+  <p>{{ site.tags[page.tag] | size }} post{% if site.tags[page.tag].size != 1 %}s{% endif %} tagged <strong>{{ page.tag }}</strong>. <a href="{{ '/tags/' | relative_url }}">All tags</a>.</p>
+</section>
+
+<ul class="post-list">
+  {% assign tagged = site.tags[page.tag] %}
+  {% for post in tagged %}
+    <li>
+      <h2><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
+      <p class="post-meta">{{ post.date | date: "%Y-%m-%d" }}{% if post.author %} &middot; {{ post.author }}{% endif %}</p>
+      <p>{{ post.excerpt | strip_html | truncate: 200 }}</p>
+    </li>
+  {% endfor %}
+</ul>
