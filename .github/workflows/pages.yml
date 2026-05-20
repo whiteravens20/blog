@@ -38,5 +38,5 @@ jobs:
     runs-on: ubuntu-24.04
     needs: build
     steps:
-      - uses: actions/deploy-pages@v4
+      - uses: actions/deploy-pages@v5
         id: deployment
