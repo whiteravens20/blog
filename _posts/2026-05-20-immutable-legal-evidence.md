@@ -10,6 +10,9 @@ description: >
   custody by design — not by promise.
 ---
 
+Legal evidence lives or dies by its chain of custody — and most cloud
+storage breaks that chain the moment a file touches a third party.
+
 ## TL;DR
 
 Cloud e-discovery platforms ask you to trust a third party with your client's
@@ -60,24 +63,24 @@ incapable of reading the payload.
 ### Architecture at a Glance
 
 ```
-┌──────────────────────────────────────────────┐
-│  Sender Browser                              │
-│  1. Select file                              │
-│  2. Generate AES-256-GCM key (WebCrypto)     │
-│  3. Encrypt file client-side, chunk-by-chunk │
-│  4. Upload ciphertext to relay               │
-│  5. Receive vault URL with key in fragment   │
-│     (fragment is NEVER sent over HTTP)       │
-└──────────────────────────────────────────────┘
+┌───────────────────────────────────────────────────┐
+│  Sender Browser                                   │
+│  1. Select file                                   │
+│  2. Generate AES-256-GCM key (WebCrypto)          │
+│  3. Encrypt file client-side, chunk-by-chunk      │
+│  4. Upload ciphertext to relay                    │
+│  5. Receive vault URL with key in fragment        │
+│     (fragment is NEVER sent over HTTP)            │
+└───────────────────────────────────────────────────┘
                │  HTTPS (encrypted blobs only)
                ▼
-┌──────────────────────────────────────────────┐
-│  archivum-null Relay                         │
-│  Stores: vault_id, ciphertext, timestamps,   │
-│          download limits                     │
-│  NEVER stores: keys, plaintext, filenames,   │
-│                identity, persistent IP logs  │
-└──────────────────────────────────────────────┘
+┌───────────────────────────────────────────────────┐
+│  archivum-null Relay                              │
+│  Stores: vault_id, ciphertext, timestamps,        │
+│          download limits                          │
+│  NEVER stores: keys, plaintext, filenames,        │
+│                identity, persistent IP logs       │
+└───────────────────────────────────────────────────┘
 ```
 
 The URL fragment (`#BASE64_KEY.BASE64_FILENAME`) is the critical detail.
