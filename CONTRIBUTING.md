@@ -5,7 +5,7 @@
 1. **Write** your draft in `_drafts/YYYY-MM-DD-<slug>.md`.
 2. **Open a PR** from a feature branch.
 3. **CI runs** `jekyll build` to catch broken Liquid or front-matter errors.
-4. **Reviewer (Casey)** merges the PR.
+4. **Jordan** reviews the PR; the maintainer merges it.
 5. **Pages workflow** auto-deploys the site to `blog.whiteravens.net`.
 
 ## Post format
