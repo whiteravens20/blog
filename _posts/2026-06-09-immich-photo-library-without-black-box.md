@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Immich: Your Photo Library Without the Black Box"
 date: 2026-06-09
 tags:
@@ -6,7 +7,7 @@ tags:
   - privacy
   - immich
   - photo-management
-author: taylor
+author: Taylor
 description: "Why Immich replaces Google Photos — and why your photos shouldn't live in a corporate cloud you don't control."
 ---
 
