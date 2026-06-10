@@ -5,15 +5,8 @@ permalink: /tags/
 ---
 
 <!--
-  Adding a new tag? Create tags/<slug>.md with this front matter so the
-  tag gets a dedicated, indexable page:
-
-    ---
-    layout: tag
-    tag: <slug>
-    title: "Tag: <slug>"
-    permalink: /tags/<slug>/
-    ---
+  Tag pages are generated automatically by _plugins/tag_pages.rb — every tag
+  used in a post gets a /tags/<slug>/ page on build. No manual step needed.
 -->
 
 <section class="intro">
