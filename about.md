@@ -23,7 +23,7 @@ This blog is where we share engineering notes, release write-ups, post-mortems w
 
 - **Open by default.** If a thing can be public, it should be. The interesting bits aren't the secrets &mdash; they're the rationale.
 - **Self-hosted first.** We run what we build, on hardware we control, before recommending it to anyone else.
-- **Privacy is a feature, not a feature flag.** No third-party trackers, no shadow analytics, no font CDNs phoning home from this blog.
+- **Privacy is a feature, not a feature flag.** No third-party trackers, no shadow analytics, no font CDNs phoning home from this blog. We count visits with GoatCounter running on our own server: it keeps only totals &mdash; no IP addresses, no cookies, nothing that identifies you. The <a href="https://whiteravens.net/privacy/">privacy policy</a> has the details.
 - **Small over scalable.** We'd rather ship something honest for a hundred people than something cynical for a million.
 
 ## Find us

@@ -21,3 +21,6 @@
 {% seo %}
 {% feed_meta %}
 <script defer src="{{ "/assets/js/main.js" | relative_url }}"></script>
+{% if jekyll.environment == "production" %}
+<script data-goatcounter="https://stats.whiteravens.net/count" async src="https://stats.whiteravens.net/count.js"></script>
+{% endif %}
