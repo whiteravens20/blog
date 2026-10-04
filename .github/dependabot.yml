@@ -10,6 +10,17 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+    # The Gemfile names two gems and the lockfile holds the rest. Without this
+    # Dependabot never updates the rest, and a fixed version of one of them
+    # waits until somebody bumps it by hand.
+    allow:
+      - dependency-type: "all"
+    # Minor and patch updates in one pull request; a major comes on its own.
+    groups:
+      gems-non-breaking:
+        update-types:
+          - "minor"
+          - "patch"
   - package-ecosystem: "github-actions"
     # Actions are pinned to commit SHAs; Dependabot moves the SHA and the
     # version comment beside it together.
