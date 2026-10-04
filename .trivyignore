@@ -1,0 +1,12 @@
+# Trivy vulnerability suppressions
+# Each entry must include a justification.
+
+# CVE-2026-85396 — rubyzip: arbitrary file write via path traversal when a
+# crafted archive is extracted.
+# rubyzip comes in only through jekyll-remote-theme, which the github-pages gem
+# installs for every site. This site sets no `remote_theme`, so nothing here
+# downloads or extracts an archive and the vulnerable path is unreachable.
+# No fix is installable: the advisory is patched in rubyzip 3.4.0, and
+# jekyll-remote-theme 0.4.3 requires rubyzip below 3.0.
+# Remove when jekyll-remote-theme accepts rubyzip 3.x.
+CVE-2026-85396
