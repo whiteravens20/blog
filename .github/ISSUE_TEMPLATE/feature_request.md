@@ -1,10 +1,20 @@
 ---
-name: Feature request
-about: Suggest an idea for this project
+name: Suggestion
+about: Propose a topic for a post or an improvement to the blog
+title: '[IDEA] '
+labels: enhancement
+assignees: ''
 ---
 
-**Is your feature request related to a problem?**
-A clear and concise description of what the problem is.
+## Kind
+- [ ] A topic or a project worth a post
+- [ ] An improvement to the site: layout, feed, tags, accessibility
 
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
+## Proposal
+What you would like to read, or what should change on the site.
+
+## Why it fits
+The blog covers open source, self-hosting and privacy. For a project, add its repository, its licence and what it does well.
+
+## Additional context
+Links, screenshots or examples are welcome.

@@ -13,7 +13,7 @@ bundle install
 bundle exec jekyll serve
 ```
 
-Visit http://localhost:4000/blog/.
+Visit http://localhost:4000/.
 
 ## Contributing
 
