@@ -31,7 +31,6 @@ This blog is where we share engineering notes, release write-ups, post-mortems w
 - Email &mdash; <a href="mailto:kontakt@whiteravens.net">kontakt@whiteravens.net</a>
 - GitHub &mdash; <a href="https://github.com/whiteravens20">@whiteravens20</a>
 - Mastodon &mdash; <a href="https://mastodon.social/@whiteravens" rel="me">@whiteravens@mastodon.social</a>
-- Chat &mdash; <a href="https://chat.wrservices.link">chat.wrservices.link</a>
 - Support our work &mdash; <a href="https://ko-fi.com/whiteravens20" rel="noopener">ko-fi.com/whiteravens20</a>
 
 If you want to contribute, the easiest starting point is opening an issue on any of our repos. We answer.
