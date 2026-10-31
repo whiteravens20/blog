@@ -16,6 +16,9 @@ Why a self-hosted note app beats cloud lock-in for people who actually write.
 
 [Memos](https://github.com/usememos/memos) is a lightweight, markdown-native note app that runs on your own server. You write without picking a title or a folder, and every note lands in a searchable timeline — no cloud vendor in between. It runs from a single Docker command and gets out of your way.
 
+![The Memos timeline with a memo composer and recent memos](/assets/posts/memos-self-hosted-notes.png)
+*Image from the [Memos README](https://github.com/usememos/memos#readme), MIT.*
+
 ## The problem with cloud notes
 
 Cloud note apps promise simplicity. What they deliver is friction.

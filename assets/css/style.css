@@ -50,6 +50,7 @@
   --text: #c5c6c7;
   --text-muted: #8892a0;
   --heading: #66fcf1;
+  --subheading: #e8eaed;
   --accent: #45a29e;
   --border: #2a3340;
   --code-bg: #11151a;
@@ -68,6 +69,7 @@
   --text: #18181b;
   --text-muted: #52525b;
   --heading: #0e7490;
+  --subheading: #18181b;
   --accent: #4338ca;
   --border: #e4e4e7;
   --code-bg: #f4f4f5;
@@ -137,6 +139,7 @@ a:hover { opacity: 0.85; text-decoration: underline; }
   border-radius: 8px;
 }
 .site-title {
+  white-space: nowrap;
   font-weight: 700;
   font-size: 1.15rem;
   color: var(--heading);
@@ -191,7 +194,7 @@ h1, h2, h3, h4 { line-height: 1.25; }
 
 /* Generic typography for any markdown page rendered via default layout */
 .page-content > h2 {
-  color: var(--heading);
+  color: var(--subheading);
   font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: -0.01em;
@@ -200,7 +203,7 @@ h1, h2, h3, h4 { line-height: 1.25; }
   scroll-margin-top: 5rem;
 }
 .page-content > h3 {
-  color: var(--heading);
+  color: var(--subheading);
   font-size: 1.2rem;
   font-weight: 600;
   margin-top: 2rem;
@@ -257,13 +260,13 @@ h1, h2, h3, h4 { line-height: 1.25; }
 .section-heading {
   font-size: 1.5rem;
   font-weight: 600;
-  color: var(--heading);
+  color: var(--subheading);
   margin-bottom: 1.5rem;
   letter-spacing: -0.01em;
 }
 
 /* ---------- Post list ---------- */
-.post-list { list-style: none; padding: 0; }
+.page-content > ul.post-list { list-style: none; padding: 0; }
 .post-list li {
   position: relative;
   margin-bottom: 1.25rem;
@@ -295,7 +298,7 @@ h1, h2, h3, h4 { line-height: 1.25; }
 .post-list h2 a { color: var(--heading); }
 .post-list h2 a:hover { opacity: 0.85; text-decoration: none; }
 .post-list .post-meta { color: var(--text-muted); font-size: 0.85rem; margin: 0 0 0.5rem; }
-.post-list p { color: var(--text-muted); font-size: 0.95rem; line-height: 1.55; margin: 0; }
+.post-list p { color: var(--text); font-size: 0.95rem; line-height: 1.55; margin: 0; }
 
 /* ---------- Post ---------- */
 .post-header h1 {
@@ -308,7 +311,7 @@ h1, h2, h3, h4 { line-height: 1.25; }
 .post-meta { color: var(--text-muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
 
 .post-content h2, .post-content h3 {
-  color: var(--heading);
+  color: var(--subheading);
   margin-top: 2rem;
   margin-bottom: 0.75rem;
   font-weight: 600;
@@ -515,10 +518,52 @@ h1, h2, h3, h4 { line-height: 1.25; }
   animation-duration: 0.18s;
 }
 
+/* ---------- Pictures in a post ---------- */
+.post-content img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0.5rem 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+}
+.post-content p > img + em {
+  display: block;
+  margin-top: 0.35rem;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+/* ---------- Following ---------- */
+.intro .follow { margin-top: 1.25rem; display: flex; flex-wrap: wrap; gap: 0.6rem; }
+.page-content a.button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--heading);
+  border-radius: var(--radius-sm);
+  color: var(--heading);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+.page-content a.button:hover { background: color-mix(in srgb, var(--heading) 12%, transparent); text-decoration: none; }
+.post-follow {
+  margin-top: 2.5rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+.post-follow p { margin: 0; }
+.post-follow strong { color: var(--subheading); }
+
 /* ---------- Responsive ---------- */
 @media (max-width: 640px) {
   .site-header { padding: 0.9rem 1rem; }
-  .site-header nav { gap: 0.85rem; }
+  .site-header nav { gap: 0.7rem; }
+  .site-title { font-size: 1rem; letter-spacing: 0; }
+  /* The logo and the name already lead home, and a phone has no room for the word as well. */
+  .site-header nav a[href="/"] { display: none; }
+  .site-brand { gap: 0.5rem; }
   .page-content { padding: 0 1rem; margin: 1.5rem auto; }
   .post-list li { padding: 1rem 1rem 1rem 1.25rem; }
   .post-nav { grid-template-columns: 1fr; }

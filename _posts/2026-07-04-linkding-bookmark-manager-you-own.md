@@ -16,6 +16,9 @@ What if you could finally stop losing useful links without handing your bookmark
 
 linkding is a single-container bookmark manager that runs on minimal hardware, searches your links instantly, and keeps your bookmarks portable. If you've abandoned bookmark managers because they're bloated or you don't trust them with your data, this one is different.
 
+![Image from the linkding README](/assets/posts/linkding-bookmark-manager-you-own.png)
+*Image from the [linkding README](https://github.com/sissbruecker/linkding#readme), MIT.*
+
 ## Why bookmarks matter (and why most managers don't)
 
 You save a link. Six months later, you need it. You can't remember the title. You can't remember where you saved it. You search your browser history. Nothing. The link is gone, or buried under 200 other tabs.

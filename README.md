@@ -1,6 +1,6 @@
 # White Ravens Blog
 
-Engineering & community blog for the White Ravens open-source collective.
+One self-hosted project a week, from the White Ravens open-source collective.
 
 - **URL:** https://blog.whiteravens.net
 - **Stack:** Jekyll + GitHub Pages

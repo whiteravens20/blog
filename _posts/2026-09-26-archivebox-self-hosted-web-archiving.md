@@ -16,6 +16,9 @@ Why self-hosters should own their web archives instead of hoping pages stay live
 
 ArchiveBox captures full-page snapshots—HTML, JavaScript, PDFs, media—and stores them on your hardware. Feed it your browser history, bookmarks, or RSS feeds, and you have a searchable offline archive that survives link rot. Runs on a Raspberry Pi.
 
+![snapshot detail page](/assets/posts/archivebox-self-hosted-web-archiving.png)
+*Image from the [ArchiveBox README](https://github.com/ArchiveBox/ArchiveBox#readme), MIT.*
+
 ## Why links die, and why that should scare you
 
 You bookmark something. You tell yourself you'll read it later. Six months pass. You click the link. 404. The site pivoted. The domain expired. The author deleted it. The page was never archived.

@@ -17,6 +17,9 @@ Sending one sensitive file should not leave a permanent copy in two mailboxes; A
 
 [Archivum Null](https://github.com/whiteravens20/archivum-null) is a browser-based file-sharing tool from White Ravens, our own project: no accounts, encrypted in the page before upload, and self-hostable. You pick a file, set a lifetime and a download limit, and send a link. When either runs out, the server deletes the file.
 
+![Archivum Null — anonymous encrypted file sharing with zero-knowledge vaults](/assets/posts/archivum-null-send-a-file-with-a-link-that-deletes-itself.png)
+*Image from the [Archivum Null README](https://github.com/whiteravens20/archivum-null#readme), MIT.*
+
 ## The situation
 
 You have to hand one file to someone who is not technical: an ID scan for a landlord, a signed contract, a payslip for a loan application. The usual way is an e-mail attachment or a chat message. The file then sits in your mailbox and in theirs for years, long after anyone needs it.
