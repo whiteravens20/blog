@@ -16,6 +16,9 @@ A privacy-first alternative to Google Analytics.
 
 Rybbit is an open-source analytics platform that replaces Google Analytics without the tracking, consent banners, or vendor lock-in. Self-host it on your own server, read your traffic in 30 seconds, and keep visitor data off third-party servers. It's younger than Plausible or Fathom, but mature enough for most self-hosted sites.
 
+![Image from the Rybbit README](/assets/posts/rybbit-analytics-without-surveillance.png)
+*Image from the [Rybbit README](https://github.com/rybbit-io/rybbit#readme), AGPL-3.0.*
+
 ## Why Rybbit instead of Google Analytics?
 
 Google Analytics is free because *you* are the product. Every pageview, click, and scroll gets sent to Google's servers, cross-referenced with your visitor's other browsing, and fed into an advertising machine. You get a dashboard in return. Rybbit flips that trade: you run the analytics on your own infrastructure, your visitors' data never leaves your server, and you get a readable dashboard without the surveillance.

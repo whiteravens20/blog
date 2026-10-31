@@ -17,6 +17,9 @@ Tired of storing your photos in someone else’s cloud?
 
 Immich is a self-hosted photo and video manager that replaces Google Photos without the cloud lock-in or privacy trade-off. Photos sync from your phone on your terms, face recognition and search run locally, and the UI is polished enough that household members use it without friction. Setup requires Docker; the payoff is permanent ownership.
 
+![Image from the Immich README](/assets/posts/immich-photo-library-without-black-box.png)
+*Image from the [Immich README](https://github.com/immich-app/immich#readme), AGPL-3.0.*
+
 ## Why This Matters
 
 You own thousands of photos. Google owns the ability to search them, organize them, and analyze them. That asymmetry is the problem Immich solves.

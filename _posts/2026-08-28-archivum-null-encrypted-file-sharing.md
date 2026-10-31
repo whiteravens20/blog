@@ -18,6 +18,9 @@ Archivum Null is a self-hosted encrypted file sharing service that works entirel
 
 ---
 
+![Archivum Null — anonymous encrypted file sharing with zero-knowledge vaults](/assets/posts/archivum-null-encrypted-file-sharing.png)
+*Image from the [Archivum Null README](https://github.com/whiteravens20/archivum-null#readme), MIT.*
+
 ## Why This Matters
 
 Firefox Send is dead. Croc and Magic Wormhole work, but they demand CLI on both ends. Most "secure" web uploaders want your email, your password, and your trust. Archivum Null closes that gap: it brings back the simplicity of Firefox Send — just pick a file, share a link, done — but it runs on your own hardware and never asks you to sign up.

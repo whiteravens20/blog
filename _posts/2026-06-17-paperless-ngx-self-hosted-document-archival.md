@@ -16,6 +16,9 @@ Finding a document shouldn't be harder than finding a file.
 
 Paperless-ngx is a self-hosted document management system that OCRs and indexes your paper and digital documents into a searchable archive. It runs on a Raspberry Pi, keeps your records under your control, and solves the real problem: finding that receipt, contract, or medical record when you need it — without handing everything to a cloud vendor.
 
+![Image from the Paperless-ngx README](/assets/posts/paperless-ngx-self-hosted-document-archival.png)
+*Image from the [Paperless-ngx README](https://github.com/paperless-ngx/paperless-ngx#readme), GPL-3.0.*
+
 ## Why This Matters
 
 Every self-hoster accumulates documents. Tax returns. Lease agreements. Medical records. Insurance policies. Warranty certificates. Utility bills. The stack grows, and the question becomes: where is it?

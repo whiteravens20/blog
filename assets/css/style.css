@@ -518,6 +518,22 @@ h1, h2, h3, h4 { line-height: 1.25; }
   animation-duration: 0.18s;
 }
 
+/* ---------- Pictures in a post ---------- */
+.post-content img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0.5rem 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+}
+.post-content p > img + em {
+  display: block;
+  margin-top: 0.35rem;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
 /* ---------- Following ---------- */
 .intro .follow { margin-top: 1.25rem; display: flex; flex-wrap: wrap; gap: 0.6rem; }
 .page-content a.button {

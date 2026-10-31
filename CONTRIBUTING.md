@@ -53,6 +53,13 @@ description: "One sentence that says what the post is about."
 
 The body is Markdown below the front matter.
 
+A post can carry one picture right after its TL;DR: a file in `assets/posts/` named after the post, with a caption saying where it comes from and under which licence. A picture never stays on another server, where a reader's browser would have to ask for it.
+
+```markdown
+![What the picture shows](/assets/posts/your-slug.png)
+*Image from the [Project README](https://github.com/owner/repo#readme), MIT.*
+```
+
 ## Code of Conduct
 
 This project adheres to the [Contributor Covenant](CODE_OF_CONDUCT.md).

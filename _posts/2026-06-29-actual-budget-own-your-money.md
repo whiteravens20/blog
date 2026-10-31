@@ -16,6 +16,9 @@ What if your budget stayed truly yours?
 
 Actual Budget is a self-hosted personal finance app that runs entirely on your hardware. No cloud account, no subscription, no data harvesting — just a local-first ledger that syncs across your devices if you want it to. If you've ever wondered where your money data goes when you use a mainstream budget app, this is the answer.
 
+![Image from the Actual Budget README](/assets/posts/actual-budget-own-your-money.png)
+*Image from the [Actual Budget README](https://github.com/actualbudget/actual#readme), MIT.*
+
 ## Why this matters
 
 Most personal finance apps work the same way: you sign up for a cloud account, connect your bank, and trust the company not to sell your spending patterns to advertisers or data brokers. Some are honest about it. Others bury the monetization model in terms you'll never read.

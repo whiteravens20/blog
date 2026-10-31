@@ -16,6 +16,9 @@ A better home for your community: searchable, organized, and fully yours.
 
 Discourse is a self-hosted forum that replaces Discord's ephemeral chaos and Reddit's algorithmic noise with searchable, threaded, permanent conversation. Full-text search and moderation work out of the box. Docker setup runs on a $5/month VPS.
 
+![Image from the Discourse README](/assets/posts/discourse-own-community-conversation.png)
+*Image from the [Discourse README](https://github.com/discourse/discourse#readme), GPL-2.0.*
+
 ## Why your community needs its own forum
 
 Discord is great for real-time chat, but it's not a forum. Threads disappear into the void. Search is useless. Your community's institutional knowledge evaporates after two weeks.
