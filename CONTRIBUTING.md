@@ -30,6 +30,10 @@ bundle exec jekyll serve    # http://localhost:4000/
 bundle exec jekyll build    # what CI runs
 ```
 
+## Link previews
+
+A production build gives every post its own link preview: `_plugins/og_cards.rb` has the browser on the build machine draw the post's title into `assets/og/<slug>.png`. With no browser there, or when one card fails, the post keeps `assets/images/og-default.png`, because a preview must never stop a post from going out. CI fails if no card was made at all.
+
 ## Post format
 
 A post is `_posts/YYYY-MM-DD-slug.md` with this front matter:

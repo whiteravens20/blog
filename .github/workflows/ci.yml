@@ -20,5 +20,7 @@ jobs:
         run: bundle exec jekyll build
         env:
           JEKYLL_ENV: production
+      - name: Check post cards
+        run: test -n "$(ls _site/assets/og/*.png)"
       - name: Check CNAME
         run: test -f CNAME && grep -q 'blog.whiteravens.net' CNAME
