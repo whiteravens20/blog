@@ -518,6 +518,28 @@ h1, h2, h3, h4 { line-height: 1.25; }
   animation-duration: 0.18s;
 }
 
+/* ---------- Following ---------- */
+.intro .follow { margin-top: 1.25rem; display: flex; flex-wrap: wrap; gap: 0.6rem; }
+.page-content a.button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--heading);
+  border-radius: var(--radius-sm);
+  color: var(--heading);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+.page-content a.button:hover { background: color-mix(in srgb, var(--heading) 12%, transparent); text-decoration: none; }
+.post-follow {
+  margin-top: 2.5rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+.post-follow p { margin: 0; }
+.post-follow strong { color: var(--subheading); }
+
 /* ---------- Responsive ---------- */
 @media (max-width: 640px) {
   .site-header { padding: 0.9rem 1rem; }

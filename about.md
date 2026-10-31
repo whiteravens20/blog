@@ -17,7 +17,7 @@ We design and run a handful of services for ourselves and our friends, and open-
 - **The services** — documentation, status, and self-hosting guides at <a href="https://wrservices.link">wrservices.link</a>.
 - **The code** — every repository under <a href="https://github.com/whiteravens20">github.com/whiteravens20</a>, MIT-licensed unless explicitly marked otherwise.
 
-This blog is where we share engineering notes, release write-ups, post-mortems when things break, and the occasional opinion piece.
+This blog is where we write about one self-hosted project a week, and about what we build ourselves.
 
 ## What we believe
 
